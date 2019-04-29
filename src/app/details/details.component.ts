@@ -5,25 +5,25 @@ import { Quote } from '../quote';
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.css']
 })
-// export class DetailsComponent implements OnInit {
-//   @Input() quote:Quote;
+export class DetailsComponent implements OnInit {
+  @Input() quote:Quote;
 
-//   @Output() isDelete = new EventEmitter<boolean>();
-//   @Output() isPlus = new EventEmitter<boolean>();
-//   @Output() isMinus = new EventEmitter<boolean>();
+  @Output() isDelete = new EventEmitter<boolean>();
+  @Output() isPlus = new EventEmitter<boolean>();
+  @Output() isMinus = new EventEmitter<boolean>();
 
-//   quoteDelete(remove:boolean) {
-//     this.isDelete.emit(remove);
-//   }
-//   votePlus(plus:boolean) {
-//     this.isPlus.emit(plus);
-//   }
-//   voteMinus(minus:boolean) {
-//     this.isMinus.emit(minus);
-//   }
-//   constructor() { }
+  quoteDelete(remove:boolean) {
+    this.isDelete.emit(remove);
+  }
+  votePlus(plus:boolean) {
+    this.isPlus.emit(plus);
+  }
+  voteMinus(minus:boolean) {
+    this.isMinus.emit(minus);
+  }
+  constructor() { }
 
-//   ngOnInit() {
-//   }
+  ngOnInit() {
+  }
 
-// }
+}
