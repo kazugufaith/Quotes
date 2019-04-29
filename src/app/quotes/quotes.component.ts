@@ -5,24 +5,24 @@ import { Quote } from '../quote';
   templateUrl: './quotes.component.html',
   styleUrls: ['./quotes.component.css']
 })
-// export class QuotesComponent implements OnInit {
+export class QuotesComponent implements OnInit {
 
-//   quotes = [
-//     new Quote(1, "The best preparation for tomorrow is doing your best today.", "Jackson Brown Jr", 0, 0, "Faith"),
-//     new Quote(2, "When you have a dream, you’ve got to grab it and never let go.", "Carol Burnett", 0, 0, "Val"),
-//   ]
-//   toggleDetails(index) {
-//     this.quotes[index].showDetails = !this.quotes[index].showDetails;
-//   }
-//   deleteQuote(isDelete, index) {
+  quotes = [
+    new Quote(1, "The best preparation for tomorrow is doing your best today.", "Jackson Brown Jr", 0, 0, "Faith"),
+    new Quote(2, "When you have a dream, you’ve got to grab it and never let go.", "Carol Burnett", 0, 0, "Val"),
+  ]
+  toggleDetails(index) {
+    this.quotes[index].showDetails = !this.quotes[index].showDetails;
+  }
+  deleteQuote(isDelete, index) {
 
-//     if (isDelete) {
-//       let toDelete = confirm("To go ahead please click ok, otherwise cancel.");
-//       if (toDelete) {
-//         this.quotes.splice(index, 1)
-//       }
-//     }
-//   }
+    if (isDelete) {
+      let toDelete = confirm("To go ahead please click ok, otherwise cancel.");
+      if (toDelete) {
+        this.quotes.splice(index, 1)
+      }
+    }
+  }
 
 //   addNewQuote(quote) {
 //     if (quote.enterQuote == "" || quote.author == "" || quote.submitter == "") {
