@@ -1,0 +1,23 @@
+{% comment %} <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-5">
+      <app-forms (addQuote)="addNewQuote($event)"></app-forms>
+    </div>
+    <div class="col-md-7">
+      <div class="display-quotes" *ngFor='let quote of quotes, let i = index'>
+        <div class="details">
+          <h4 class="one2">{{quote.enterQuote}} </h4>
+          <h4><cite>-{{quote.author}}</cite></h4>
+          <br>
+          <button class="btn btn-primary btnspace" (click)='toggleDetails(i)' type="button" name="button">More Details
+          </button>
+          <br>
+
+          <app-details *ngIf="quote.showDetails" [quote]='quote' (isDelete)='deleteQuote($event, i)'
+            (isPlus)='plusVote($event, i)' (isMinus)='minusVote($event, i)'>
+          </app-details>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> {% endcomment %}
