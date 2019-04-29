@@ -2,9 +2,9 @@
     <h4 class="style">Date submited {{quote.submitDate | date}}</h4>
 <p> Submited by {{quote.submitter}} </p>
 <button class="btn btn-danger btnspace" (click)='votePlus(true)' type="button" name="button">
-<span class="glyphicon glyphicon-circle-arrow-up"></span>  Upvote: {{quote.upVote}}</button>
+<span class="glyphicon glyphicon-circle-arrow-up"></span>  Like: {{quote.upVote}}</button>
 <button class="btn btn-primary btnspace" (click)='voteMinus(true)' type="button" name="button">
-<span class="glyphicon glyphicon-circle-arrow-down"></span>Downvote: {{quote.downVote}}</button>
+<span class="glyphicon glyphicon-circle-arrow-down"></span>Dislike: {{quote.downVote}}</button>
 <button class="btn btn-danger btnspace" (click)='quoteDelete(true)' type="button" name="button">
   <span class="glyphicon glyphicon-trash"></span>Delete</button>
 </div> 
