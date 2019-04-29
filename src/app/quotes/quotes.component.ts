@@ -24,32 +24,32 @@ export class QuotesComponent implements OnInit {
     }
   }
 
-//   addNewQuote(quote) {
-//     if (quote.enterQuote == "" || quote.author == "" || quote.submitter == "") {
-//       alert("Empty field");
-//     }
-//     else {
-//       let quoteLength = this.quotes.length;
-//       quote.id = quoteLength + 1;
-//       quote.submitDate = new Date();
-//       this.quotes.push(quote);
-//     }
-//   }
-//   plusVote(isPlus, index) {
-//     if (isPlus) {
-//       this.quotes[index].upVote += 1;
-//     }
-//   }
+  addNewQuote(quote) {
+    if (quote.enterQuote == "" || quote.author == "" || quote.submitter == "") {
+      alert("Empty field");
+    }
+    else {
+      let quoteLength = this.quotes.length;
+      quote.id = quoteLength + 1;
+      quote.submitDate = new Date();
+      this.quotes.push(quote);
+    }
+  }
+  plusVote(isPlus, index) {
+    if (isPlus) {
+      this.quotes[index].upVote += 1;
+    }
+  }
 
-//   minusVote(isMinus, index) {
-//     if (isMinus) {
-//       this.quotes[index].downVote += 1;
-//     }
-//   }
+  minusVote(isMinus, index) {
+    if (isMinus) {
+      this.quotes[index].downVote += 1;
+    }
+  }
 
-//   constructor() { }
+  constructor() { }
 
 
-//   ngOnInit() {
-//   }
-// }
+  ngOnInit() {
+  }
+}
