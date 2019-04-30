@@ -1,27 +1,29 @@
- body {
-     font-family: 'Reem Kufi', sans-serif;
-     margin: 30px;
-     background-size: cover;
-     color: white;
- }
- 
- p {
-     font-size: 20px;
- }
- 
- .one1 {
-     font-size: 50px;
- }
- 
- .btnspace {
-     height: 30px;
-     font-size: 20px;
- }
- 
- .jumbotron {
-     padding: 2rem 1rem;
-     margin-bottom: 2rem;
-     background-image: url('/assets/1.jpeg');
-     background-size: cover;
-     border-radius: 0.3rem;
- }
+                 body {
+                     font-family: 'Reem Kufi', sans-serif;
+                     margin: 30px;
+                     background-size: cover;
+                     color: white;
+                 }
+                 
+                 p {
+                     font-size: 20px;
+                 }
+                 
+                 .one1 {
+                     font-size: 50px;
+                     text-align: center;
+                     padding-left: 50px;
+                 }
+                 
+                 .btnspace {
+                     height: 30px;
+                     font-size: 20px;
+                 }
+                 
+                 .jumbotron {
+                     padding: 2rem 1rem;
+                     margin-bottom: 2rem;
+                     background-image: url('/assets/1.jpeg');
+                     background-size: cover;
+                     border-radius: 0.3rem;
+                 }
